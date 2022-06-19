@@ -1,3 +1,7 @@
+HOSTED ON THE URL
+https://sri-sridhar.github.io/chromext/
+
+
 # Chromext
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
@@ -12,6 +16,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+run 'ng build --baseHref="https://sri-sridhar.github.io/chromext/"
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests

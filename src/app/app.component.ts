@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { QuoteService } from './quote.service';
 
-interface QuoteInterface {
-  text: string;
-  author: string;
-  id: number;
-}
+// interface QuoteInterface {
+//   text: string;
+//   author: string;
+//   id: number;
+// }
 
 @Component({
   selector: 'app-root',
@@ -21,11 +21,15 @@ export class AppComponent implements OnInit {
     this.fetchQuotes();
   }
 
+  // fetchQuotes() {
+  //   this.qService.getQuotes().subscribe(data => {
+  //     this.quote = data;
+  //     // this.makeId(this.quotes);
+  //   });
+  // }
+
   fetchQuotes() {
-    this.qService.getQuotes().subscribe(data => {
-      this.quote = data;
-      // this.makeId(this.quotes);
-    });
+    this.quote = this.qService.getQuotes();
   }
 
   // makeId(quotes: any) {
